@@ -7,6 +7,8 @@ pipeline {
 		databaseIP="";
 	}
 	stages{
+
+
 		stage('Test Application'){
 			steps{
 			sh 'mvn clean test'
@@ -87,3 +89,6 @@ sudo mv /home/jenkins/myApp.service /etc/systemd/system/myApp.service
 
 	}
 }
+Use your IP for the app instance to ssh to the other machine
+Use your repository fork to clone
+Use your database endpoint to generate the application-dev.properties file
